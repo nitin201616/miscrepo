@@ -1,0 +1,24 @@
+const myObjA = 
+{ 
+name: 'Welcome' 
+function test(){
+ return this.name;
+}
+} 
+myObjA.test() - welcome
+
+const myObjB = { 
+name: 'Interview completed'
+ }. 
+
+How Do I access test() from ObjB or how can I get output as Interview completed? 
+
+myOBjA.test.call(myObjB);
+
+
+[1200,202,88,99,22,11]
+
+runs = 1200
+matches = 202
+extras = [88,99,22,11]
+

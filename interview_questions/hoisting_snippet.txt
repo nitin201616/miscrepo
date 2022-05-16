@@ -1,0 +1,28 @@
+a=20
+console.log(a);
+var a;
+undefined  - 20
+
+
+b=30
+console.log(b);
+let b;
+refrence error
+
+let b=10;
+let b=20;
+console.log(b);
+
+
+const a;
+a=20;
+console.log(a);
+
+
+const a=10;
+a=20; 
+console.log(a);
+
+
+
+

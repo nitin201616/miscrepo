@@ -1,0 +1,27 @@
+<h1 id="test1" class="test" >hello </h1>
+
+<style>
+.test{
+color: red
+}
+
+#test1{
+color: yellow
+}
+
+h1{
+color: blue
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+

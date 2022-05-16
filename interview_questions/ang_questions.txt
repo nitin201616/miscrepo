@@ -1,0 +1,44 @@
+
+go to angular.json
+and add your css there
+or go to main css file under src folder called style.css and try and include it
+
+
+
+Regarding the best way of handling Authentication headers in Angular > 4 it's best to use
+Http Interceptors for adding them to each request, and afterwards using
+Guards for protecting your routes.
+
+f you are navigating to the route imperatively using Router.navigate, you will pass in query parameters with queryParams.
+
+In our example, if we want to route visitors to the products with the list ordered by popularity, it would look like this:
+
+goProducts() {
+  this.router.navigate(['/products'], { queryParams: { order: 'popular' } });
+}
+
+here is a lot of confusion on this topic because there are so many different ways to do it.
+
+Here are the appropriate types used in the following screen shots:
+
+private route: ActivatedRoute
+private router: Router
+1) Required Routing Parameters:
+
+enter image description here
+
+2) Route Optional Parameters:
+
+enter image description here
+
+3) Route Query Parameters:
+
+enter image description here
+
+4) You can use a service to pass data from one component to another without using route parameters at all.
+
+For an example see: https://blogs.msmvps.com/deborahk/build-a-simple-angular-service-to-share-data/
+
+I have a plunker of this here: https://plnkr.co/edit/KT4JLmpcwGBM2xdZQeI9?p=preview
+
+

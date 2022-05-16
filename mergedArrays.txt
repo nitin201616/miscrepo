@@ -1,0 +1,47 @@
+myArray1 = [0,1,2,31];
+myArray2 = [2,3,4,14];
+for (let i = 0; i<myArray2.length;i++){
+  myArray1.push(myArray2[i]);
+}
+
+console.log(myArray1.sort((a,b) => a -b));
+
+console.log('new solution');
+
+myArray3 = [0,1,2,31];
+myArray4 = [2,3,4,14];
+
+const newArray = myArray3.concat(myArray4);
+console.log(newArray.sort((a,b) => a -b));
+
+console.log('third solution');
+myArray5 = [0,1,2,31];
+myArray6 = [2,3,4,14];
+
+
+const firstArray = [0,1,8];
+const secondArray = [2,4,6,10];
+i=1;
+j=1;
+
+let arrayFirstItem = firstArray[0];
+let arraySecondItem = secondArray[0];
+
+const mergeArray = [];
+
+while(arrayFirstItem || arraySecondItem){
+  console.log(arrayFirstItem,arraySecondItem);
+  if (arraySecondItem === undefined || arrayFirstItem < arraySecondItem){
+    
+    mergeArray.push(arrayFirstItem);
+    arrayFirstItem = firstArray[i];
+    i++;
+  } else {
+    mergeArray.push(arraySecondItem);
+    arraySecondItem = secondArray[j];
+    j++;
+  }
+  
+}
+
+console.log(mergeArray);
